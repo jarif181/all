@@ -59,6 +59,7 @@ const dataAllPhone = (phone) => {
     const setName= document.getElementById('allDetailsPhone')
                 setName.innerHTML = `
                 <img class="mb-2 md/lg:mb-5" src="${phone.image}" alt="">
+                <h3 class="text-2xl mb-2">${phone.name}</h3>
                 <p><span class="text-xl mb-1">Brand: </span>${phone.brand}</p>
                 <p><span class="text-xl mb-1">Storage: </span>${phone.mainFeatures.storage}</p>
                 <p><span class="text-xl mb-1">Display Size: </span>${phone.mainFeatures.displaySize}</p>
@@ -66,6 +67,7 @@ const dataAllPhone = (phone) => {
                 <p><span class="text-xl mb-1">Memory: </span>${phone.mainFeatures.memory}</p>
                 <p><span class="text-xl mb-1">Slug: </span>${phone.slug}}</p>
                 <p><span class="text-xl mb-1">Release data: </span>${phone.releaseDate}</p>
+                <p><span class="text-xl mb-1">Gps: </span>${phone.others?.GPS || "No Gps Avelible"}</p>
 
                 `
 }
