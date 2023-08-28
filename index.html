@@ -2,48 +2,63 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Phone Shop</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Phone Shop</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
-    <header>
+  <header>
 
-    </header>
+  </header>
 
-    <main class="container mx-auto">
-      <section class="bg-gray-100 p-5 mt-7 rounded-xl">
-        <input id="Search" type="text" placeholder="Search..." class="input w-full max-w-xs" />
-        <button onclick="search()" class="btn btn-accent">SEARCH</button>
-      </section>
-        <section>
-          <div id="loading" class="text-center mt-20 hidden">
-            <span class="loading loading-spinner text-success"></span>
-          </div>
-
-
-
-          <!-- search Setion -->
-            <div id="cointaner" class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 text-black md/lg:px-16 mt-16">
-            </div>
-            <!-- Show All -->
-            <div class="hidden mt-6  text-center" id="Show-All">
-              <button onclick="showAll()" class="btn btn-outline btn-success">Show-All</button>
-            </div>
-        </section>
-    </main>
+  <main class="container mx-auto">
+    <section class="bg-gray-100 p-5 mt-7 rounded-xl">
+      <input id="Search" type="text" placeholder="Search..." class="input w-full max-w-xs" />
+      <button onclick="search()" class="btn btn-accent">SEARCH</button>
+    </section>
+    <section>
+      <div id="loading" class="text-center mt-20 hidden">
+        <span class="loading loading-spinner text-success"></span>
+      </div>
 
 
+      <!-- search Setion -->
+      <div id="cointaner" class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 text-black md/lg:px-16 mt-16">
+      </div>
+      <!-- Show All -->
+      <div class="hidden mt-6  text-center" id="Show-All">
+        <button onclick="showAll()" class="btn btn-outline btn-success">Show-All</button>
+      </div>
+    </section>
+  </main>
 
-    <footer>
+  <!-- modeal -->
+  <!-- Open the modal using ID.showModal() method -->
 
-    </footer>
+  <dialog id="modalClick" class="modal modal-bottom sm:modal-middle ">
+    <form method="dialog" class="modal-box">
+      <div id="allDetailsPhone">
 
-    <!-- JavaScriptFile -->
-    <script src="./js/phone.js"></script>
+
+      </div>
+      <div class="modal-action">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </div>
+    </form>
+  </dialog>
+
+
+
+  <footer>
+
+  </footer>
+
+  <!-- JavaScriptFile -->
+  <script src="./js/phone.js"></script>
 </body>
 
 </html>
